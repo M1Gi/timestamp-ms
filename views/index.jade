@@ -1,0 +1,20 @@
+extends layout
+
+// All of this code will go in the body tag in layout.jade
+// title comes from index.js (in routes directory); if using the data and nothing 
+// else, just put the tag = nameOfVar; if writing more text & concatenating more 
+// data to it, use #{nameOfVar} notation
+block content
+  h1 API Basejump: Timestamp Microservice
+  h2 Made by M1Gi
+  p User Stories:
+  ul
+    li 1) I can pass a string as a parameter, and it will check to see whether that string contains either a 
+          n unix timestamp or a natural language date (example: January 1, 2016)
+    li 2) If it does, it returns both the Unix timestamp and the natural language form of that date.
+    li 3) If it does not contain a date or Unix timestamp, it returns null for those properties.
+  h2 Example Usage
+  p.red https://timestamp-ms.herokuapp.com/December%2015,%202015
+  p.red https://timestamp-ms.herokuapp.com/1450137600
+  h2 Example Output:
+  p.red { "unix": 1450137600, "natural": "December 15, 2015" }

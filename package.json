@@ -1,0 +1,28 @@
+{
+  "name": "timestamp",
+  "version": "1.0.0",
+  "description": "Timestamp Microservice",
+  "main": "server.js",
+  "engines": {
+    "node": "4.7.3",
+    "npm": "2.15.11"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M1Gi/timestamp-ms.git"
+  },
+  "author": "M1Gi",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^2.6.8",
+    "express": "^4.15.3",
+    "jade": "^1.11.0",
+    "morgan": "^1.8.1"
+  }
+}
+
+
